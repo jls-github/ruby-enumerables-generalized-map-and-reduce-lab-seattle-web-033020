@@ -15,4 +15,4 @@ def reduce(array, value=0)
     i += 1
   end
   value
-endc
+end
