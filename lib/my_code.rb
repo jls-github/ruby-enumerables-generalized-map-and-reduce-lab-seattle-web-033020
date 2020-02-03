@@ -9,15 +9,15 @@ def map(array)
 end
 
 def reduce(array, value=nil)
-  if value == true
-    result = value
+  i = 0
+  if value
     i = 0
   else
-    result = array[i]
+    value = array[i]
     i = 1
   end
   while i < array.length do
-    result = yield(result, array[i])
+    value = yield(value, array[i])
     i += 1
   end
   value
