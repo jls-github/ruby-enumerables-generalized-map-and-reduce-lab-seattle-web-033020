@@ -10,13 +10,14 @@ end
 
 def reduce(array, value=nil)
   if value
+    result = value
     i = 0
   else
-    value = array[i]
+    result = array[i]
     i = 1
   end
   while i < array.length do
-    value = yield(value, array[i])
+    result = yield(result, array[i])
     i += 1
   end
   value
