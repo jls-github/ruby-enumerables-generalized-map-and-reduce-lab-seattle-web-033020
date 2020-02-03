@@ -10,7 +10,7 @@ end
 
 def reduce(array, value=0)
   i = 0
-  array[0].kind_of
+  array[0].kind_of(Boolean)
   while i < array.length do
     value = yield(array[i], value)
     i += 1
