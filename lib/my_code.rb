@@ -1,7 +1,7 @@
 # Your Code Here
 def map(array)
   i = 0
-  while i < array[i] do
+  while i < array.length do
     yield
     i += 1
   end
