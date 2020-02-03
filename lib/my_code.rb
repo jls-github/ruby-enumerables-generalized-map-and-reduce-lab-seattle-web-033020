@@ -1,7 +1,9 @@
 # Your Code Here
 def map(array)
-  array.each do |element|
+  i = 0
+  while i < array[i] do
     yield
+    i += 1
   end
   array
 end
