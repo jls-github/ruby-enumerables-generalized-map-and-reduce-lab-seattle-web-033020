@@ -10,7 +10,13 @@ end
 
 def reduce(array, value=0)
   i = 0
-  array[-1].kind_of?(Integer) != true ? value = array[0] : nil
+  if array[0].kind_of?(Integer) != true 
+    if array[0] = true
+      value = true
+    else
+      value = false
+    end
+  end
   while i < array.length do
     value = yield(array[i], value)
     i += 1
