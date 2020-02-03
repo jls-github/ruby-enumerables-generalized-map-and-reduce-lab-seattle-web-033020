@@ -8,10 +8,12 @@ def map(array)
   array
 end
 
-def reduce(array, value = 0)
-  i = 0
-  if array[0].kind_of?(Boolean)
-    value = array[0]
+def reduce(array, value=nil)
+  if value
+    i = 0
+  else
+    value = array[i]
+    i = 1
   end
   while i < array.length do
     value = yield(array[i], value)
