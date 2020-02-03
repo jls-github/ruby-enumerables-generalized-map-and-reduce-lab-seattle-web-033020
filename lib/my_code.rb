@@ -7,3 +7,12 @@ def map(array)
   end
   array
 end
+
+def reduce(array, value=0)
+  i = 0
+  while i < array.length do
+    value = yield(array[i])
+    i += i
+  end
+  value
+end
