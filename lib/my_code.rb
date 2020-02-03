@@ -8,10 +8,10 @@ def map(array)
   array
 end
 
-def reduce(array, value=0)
+def reduce(array, value)
   i = 0
   while i < array.length do
-    value = yield(array[i], value=nil)
+    value = yield(array[i], value)
     i += 1
   end
   value
