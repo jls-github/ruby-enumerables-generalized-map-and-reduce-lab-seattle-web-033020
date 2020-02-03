@@ -16,10 +16,9 @@ def reduce(array, value=0)
     else
       value = false
     end
-  end
   while i < array.length do
-    result = yield(array[i], value)
+    value = yield(array[i], value)
     i += 1
   end
-  result
+  value
 end
