@@ -8,15 +8,8 @@ def map(array)
   array
 end
 
-def reduce(array, value=0)
+def reduce(array, value={})
   i = 0
-  if array[0].kind_of?(Integer) != true 
-    if array[0] = true
-      value = true
-    else
-      value = false
-    end
-  end
   while i < array.length do
     value = yield(array[i], value)
     i += 1
