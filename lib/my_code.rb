@@ -14,4 +14,4 @@ def reduce(array, value=0)
     yield(array[i], value)
   end
   value
-end
+endc
