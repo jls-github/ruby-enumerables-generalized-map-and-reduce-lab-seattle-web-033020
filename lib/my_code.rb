@@ -1,6 +1,8 @@
 # Your Code Here
 def map(array)
-  array.each do |yield|
+  i = 0
+  while i < array.length do
+    yield(array[i])
   end
   array
 end
