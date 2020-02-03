@@ -13,7 +13,7 @@ def reduce(array, value=0)
   while i < array.length do
     value = yield(array[i], value)
     i += 1
-    value == 0 ? value = false : nil
+    value == 0 ? value = array[i] : nil
   end
   value
 end
