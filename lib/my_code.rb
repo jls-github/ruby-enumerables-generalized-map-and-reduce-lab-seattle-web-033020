@@ -9,7 +9,7 @@ def map(array)
 end
 
 def reduce(array, value=nil)
-  if value
+  if value == true
     result = value
     i = 0
   else
